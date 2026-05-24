@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XEMI — AI-Native Trade Operations</title>
+  <meta name="description" content="AI-native trade operations platform connecting government portals, global carriers, and ERPs seamlessly.">
+  
+  <!-- Fonts: Cabinet Grotesk (800) & Satoshi (400, 500, 600) -->
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,600&display=swap" rel="stylesheet">
+  
+  <!-- Separated CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION — WISOR-STYLE MORPHING HEADER
+       ========================================================================== -->
+  <header id="morphing-header">
+    <div class="header-inner">
+      <a href="#" class="logo-container">
+        <img src="xemi-logo.png" alt="XEMI" class="logo-image">
+      </a>
+      
+      <nav>
+        <a href="#platform" class="nav-link">Platform</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#integrations" class="nav-link">Integrations</a>
+        <a href="#outcomes" class="nav-link">Case Studies</a>
+      </nav>
+      
+      <a href="#demo" class="nav-cta btn-cta-nav">Request Demo</a>
+      
+      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Full-Screen Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu">
+    <a href="#platform" class="mobile-link">Platform</a>
+    <a href="#solutions" class="mobile-link">Solutions</a>
+    <a href="#integrations" class="mobile-link">Integrations</a>
+    <a href="#outcomes" class="mobile-link">Case Studies</a>
+    <a href="#demo" class="btn btn-navy" style="margin-top: 16px;">Request Demo</a>
+  </div>
+
+  <main>
+    
+    <!-- ==========================================================================
+         SECTION 1: HERO
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="hero-container">
+        
+        <div class="hero-text-block">
+          <h1 class="hero-headline">Global Trade.<br><span class="brand-text">One Platform.</span></h1>
+          <div class="hero-ctas">
+            <a href="#demo" class="btn btn-navy">Request a Demo</a>
+            <a href="#platform" class="btn btn-ghost-navy">See It Work</a>
+          </div>
+        </div>
+        
+        <!-- Live Trade-Route Canvas and SVG Map Area -->
+        <div class="map-container">
+          <!-- High-Fidelity SVG Navigation World Chart Map -->
+          <svg class="hero-map-svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet" id="hero-map-svg">
+            <!-- Navigation Grid Lines -->
+            <g stroke="rgba(27, 46, 75, 0.03)" stroke-width="0.75" fill="none">
+              <!-- Latitudes -->
+              <line x1="0" y1="50" x2="1000" y2="50" />
+              <line x1="0" y1="100" x2="1000" y2="100" />
+              <line x1="0" y1="150" x2="1000" y2="150" />
+              <line x1="0" y1="200" x2="1000" y2="200" />
+              <line x1="0" y1="250" x2="1000" y2="250" />
+              <line x1="0" y1="300" x2="1000" y2="300" />
+              <line x1="0" y1="350" x2="1000" y2="350" />
+              <line x1="0" y1="400" x2="1000" y2="400" />
+              <line x1="0" y1="450" x2="1000" y2="450" />
+              <!-- Longitudes -->
+              <line x1="100" y1="0" x2="100" y2="500" />
+              <line x1="200" y1="0" x2="200" y2="500" />
+              <line x1="300" y1="0" x2="300" y2="500" />
+              <line x1="400" y1="0" x2="400" y2="500" />
+              <line x1="500" y1="0" x2="500" y2="500" />
+              <line x1="600" y1="0" x2="600" y2="500" />
+              <line x1="700" y1="0" x2="700" y2="500" />
+              <line x1="800" y1="0" x2="800" y2="500" />
+              <line x1="900" y1="0" x2="900" y2="500" />
+            </g>
+            
+            <!-- Continental Coastlines Outline Group -->
+            <g fill="none" stroke="var(--navy)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.10">
+              <!-- North America -->
+              <path d="M 80 85 C 90 70 120 60 160 55 C 200 50 250 45 270 60 C 285 70 300 85 295 105 C 290 125 275 140 270 150 C 265 160 270 178 266 185 C 262 192 245 185 240 180 C 235 175 220 188 200 200 C 180 212 170 235 165 245 C 160 255 150 260 148 245 C 146 230 140 205 142 190 C 144 175 130 155 120 150 C 110 145 90 135 82 120 C 74 105 70 100 80 85 Z"/>
+              <!-- Greenland -->
+              <path d="M 315 45 C 330 35 370 45 375 60 C 370 75 350 90 335 88 C 320 86 310 70 315 45 Z"/>
+              
+              <!-- South America -->
+              <path d="M 166 247 C 175 258 195 270 210 272 C 225 274 250 280 265 295 C 280 310 290 330 288 350 C 286 370 270 395 255 415 C 240 435 220 460 212 465 C 204 470 200 460 202 445 C 204 430 200 405 198 385 C 196 365 185 345 180 320 C 175 295 165 275 160 265 C 155 255 160 240 166 247 Z"/>
+              
+              <!-- Eurasia (Europe & Asia) -->
+              <path d="M 415 185 C 418 170 410 155 422 142 C 434 129 448 135 452 120 C 456 105 460 85 475 75 C 490 65 520 70 528 85 C 536 100 550 90 565 82 C 580 74 610 65 650 60 C 690 55 770 50 820 60 C 870 70 910 85 925 100 C 940 115 928 130 920 145 C 912 160 895 170 885 185 C 875 200 850 215 825 210 C 800 205 775 220 762 235 C 749 250 735 275 725 288 C 715 301 708 285 700 275 C 692 265 675 260 660 262 C 645 264 635 280 625 268 C 615 256 595 240 580 235 C 565 230 550 240 535 235 C 520 230 515 215 505 218 C 495 221 475 218 465 210 C 455 202 435 208 425 200 C 415 192 412 200 415 185 Z"/>
+              
+              <!-- Great Britain / Ireland -->
+              <path d="M 425 110 C 430 102 440 108 438 118 C 432 122 422 118 425 110 Z"/>
+              
+              <!-- Japan -->
+              <path d="M 885 145 C 895 160 880 185 870 195 C 865 190 875 165 885 145 Z"/>
+              
+              <!-- Sri Lanka -->
+              <path d="M 658 275 A 3 4 0 1 1 661 279 Z"/>
+              
+              <!-- Africa -->
+              <path d="M 505 222 C 515 225 528 238 535 245 C 542 252 555 270 560 288 C 565 306 550 328 548 348 C 546 368 530 405 515 425 C 500 445 480 448 478 430 C 476 412 468 385 460 365 C 452 345 440 330 435 310 C 430 290 415 270 410 255 C 405 240 422 232 445 228 C 468 224 495 219 505 222 Z"/>
+              
+              <!-- Madagascar -->
+              <path d="M 545 355 L 555 385 L 540 375 Z"/>
+              
+              <!-- Australia -->
+              <path d="M 770 360 C 810 350 830 370 840 390 C 830 420 780 430 760 410 C 750 380 755 365 770 360 Z"/>
+              <!-- Tasmania -->
+              <path d="M 810 440 A 3 3 0 1 1 813 443 Z"/>
+            </g>
+            
+            <!-- Hubs Glow Radar pulsing elements -->
+            <g fill="#3B6FD4" opacity="0.8">
+              <!-- Mumbai -->
+              <circle cx="640" cy="230" r="4.5" class="hub-pulse" />
+              <circle cx="640" cy="230" r="8" fill="none" stroke="#3B6FD4" stroke-width="1.25" class="hub-ring" style="animation-delay: 0s;" />
+              
+              <!-- Rotterdam -->
+              <circle cx="480" cy="130" r="4.5" class="hub-pulse" />
+              <circle cx="480" cy="130" r="8" fill="none" stroke="#3B6FD4" stroke-width="1.25" class="hub-ring" style="animation-delay: 0.4s;" />
+              
+              <!-- Shanghai -->
+              <circle cx="780" cy="200" r="4.5" class="hub-pulse" />
+              <circle cx="780" cy="200" r="8" fill="none" stroke="#3B6FD4" stroke-width="1.25" class="hub-ring" style="animation-delay: 0.8s;" />
+              
+              <!-- Los Angeles -->
+              <circle cx="160" cy="190" r="4.5" class="hub-pulse" />
+              <circle cx="160" cy="190" r="8" fill="none" stroke="#3B6FD4" stroke-width="1.25" class="hub-ring" style="animation-delay: 1.2s;" />
+              
+              <!-- Dubai -->
+              <circle cx="570" cy="200" r="4.5" class="hub-pulse" />
+              <circle cx="570" cy="200" r="8" fill="none" stroke="#3B6FD4" stroke-width="1.25" class="hub-ring" style="animation-delay: 1.6s;" />
+              
+              <!-- Hamburg -->
+              <circle cx="495" cy="120" r="4.5" class="hub-pulse" />
+              <circle cx="495" cy="120" r="8" fill="none" stroke="#3B6FD4" stroke-width="1.25" class="hub-ring" style="animation-delay: 2s;" />
+              
+              <!-- Singapore -->
+              <circle cx="720" cy="310" r="4.5" class="hub-pulse" />
+              <circle cx="720" cy="310" r="8" fill="none" stroke="#3B6FD4" stroke-width="1.25" class="hub-ring" style="animation-delay: 2.4s;" />
+              
+              <!-- New York -->
+              <circle cx="260" cy="160" r="4.5" class="hub-pulse" />
+              <circle cx="260" cy="160" r="8" fill="none" stroke="#3B6FD4" stroke-width="1.25" class="hub-ring" style="animation-delay: 2.8s;" />
+            </g>
+          </svg>
+          
+          <canvas class="hero-canvas" id="hero-canvas"></canvas>
+          
+          <!-- Floating Status Cards HTML Overlay -->
+          <div class="status-card" id="card-a"></div>
+          <div class="status-card" id="card-b"></div>
+          <div class="status-card" id="card-c"></div>
+          
+          <!-- Mini XEMI Dashboard Fragment -->
+          <div class="dashboard-fragment">
+            <div class="db-header">
+              <h4>Active Shipments</h4>
+              <!-- Canvas sparkline -->
+              <canvas class="db-sparkline" id="sparkline-canvas" width="60" height="20"></canvas>
+            </div>
+            
+            <div style="font-family: var(--font-display); font-size: 28px; font-weight: 800; color: var(--navy); margin-bottom: 14px;" id="active-shipments-count">0</div>
+            
+            <div class="db-rows">
+              <div class="db-row">
+                <div class="db-shipment-id">
+                  <span class="status-indicator blue"></span>
+                  MUM-2847
+                </div>
+                <span class="status-badge blue">In Transit</span>
+              </div>
+              <div class="db-row">
+                <div class="db-shipment-id">
+                  <span class="status-indicator amber"></span>
+                  SHA-1093
+                </div>
+                <span class="status-badge amber">Customs Hold</span>
+              </div>
+              <div class="db-row">
+                <div class="db-shipment-id">
+                  <span class="status-indicator green"></span>
+                  DXB-3341
+                </div>
+                <span class="status-badge green">Delivered</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: TRUST
+         ========================================================================== -->
+    <section class="trust-section">
+      <!-- Infinite Wordmark Marquee -->
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><polygon points="6,0 12,12 0,12"/></svg> AlphaVector</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><circle cx="6" cy="6" r="6"/></svg> Ample Graphics</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><rect width="12" height="12" rx="2"/></svg> Sync Logistics</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="var(--navy)" stroke-width="2.5"><circle cx="6" cy="6" r="5"/></svg> Interfracht</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><polygon points="0,0 12,6 0,12"/></svg> CHS</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><rect x="2" y="2" width="8" height="8" rx="4"/></svg> DN Freight</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="var(--navy)" stroke-width="2.5"><rect x="1" y="1" width="10" height="10" rx="1"/></svg> Eldan Cargo</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><circle cx="4" cy="6" r="4"/><circle cx="8" cy="6" r="4"/></svg> Fridenson</div>
+          
+          <!-- Duplicated for loop -->
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><polygon points="6,0 12,12 0,12"/></svg> AlphaVector</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><circle cx="6" cy="6" r="6"/></svg> Ample Graphics</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><rect width="12" height="12" rx="2"/></svg> Sync Logistics</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="var(--navy)" stroke-width="2.5"><circle cx="6" cy="6" r="5"/></svg> Interfracht</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><polygon points="0,0 12,6 0,12"/></svg> CHS</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><rect x="2" y="2" width="8" height="8" rx="4"/></svg> DN Freight</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="var(--navy)" stroke-width="2.5"><rect x="1" y="1" width="10" height="10" rx="1"/></svg> Eldan Cargo</div>
+          <div class="logo-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="var(--navy)"><circle cx="4" cy="6" r="4"/><circle cx="8" cy="6" r="4"/></svg> Fridenson</div>
+        </div>
+      </div>
+
+      <!-- Stat Counters Glass strip -->
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-number animated-counter" id="stat-processed" data-value="50" data-suffix="K+">0K+</div>
+          <div class="stat-label">Shipments Processed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number animated-counter" id="stat-manual" data-value="70" data-suffix="%">0%</div>
+          <div class="stat-label">Less Manual Effort</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number animated-counter" id="stat-turnaround" data-value="90" data-suffix="%">0%</div>
+          <div class="stat-label">Faster Turnaround</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number animated-counter" id="stat-carriers" data-value="330" data-suffix="+">0+</div>
+          <div class="stat-label">Carrier Integrations</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: PLATFORM (BENTO GRID)
+         ========================================================================== -->
+    <section class="platform-section" id="platform">
+      <div class="platform-container">
+        <span class="section-label">The Platform</span>
+        
+        <div class="bento-grid">
+          
+          <!-- Card 1: Unified Visibility -->
+          <div class="bento-card card-visibility scroll-reveal">
+            <div class="card-meta">
+              <h3>Unified Visibility</h3>
+              <p>Seamless monitoring across borders.</p>
+            </div>
+            
+            <div class="card-visual">
+              <div class="visibility-timeline-container">
+                <svg width="100%" height="80" viewBox="0 0 500 80">
+                  <line x1="40" y1="40" x2="460" y2="40" stroke="#1B2E4B" stroke-opacity="0.1" stroke-width="4" stroke-linecap="round"/>
+                  <line id="timeline-progress" x1="40" y1="40" x2="40" y2="40" stroke="#3B6FD4" stroke-width="4" stroke-linecap="round"/>
+                  
+                  <circle cx="40" cy="40" r="6" fill="#FAFAF8" stroke="#1B2E4B" stroke-width="2"/>
+                  <circle cx="145" cy="40" r="6" fill="#FAFAF8" stroke="#1B2E4B" stroke-width="2"/>
+                  <circle cx="250" cy="40" r="6" fill="#FAFAF8" stroke="#1B2E4B" stroke-width="2"/>
+                  <circle cx="355" cy="40" r="6" fill="#FAFAF8" stroke="#1B2E4B" stroke-width="2"/>
+                  <circle cx="460" cy="40" r="6" fill="#FAFAF8" stroke="#1B2E4B" stroke-width="2"/>
+                  
+                  <circle id="moving-glow-dot" cx="40" cy="40" r="8" fill="#3B6FD4"/>
+                </svg>
+                <div class="ripple-pulse" id="timeline-ripple"></div>
+                <div class="timeline-nodes">
+                  <span class="timeline-node-text active">PO Raised</span>
+                  <span class="timeline-node-text">Booked</span>
+                  <span class="timeline-node-text">Departed</span>
+                  <span class="timeline-node-text">In Transit</span>
+                  <span class="timeline-node-text">Delivered</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 2: End-to-End Automation -->
+          <div class="bento-card card-automation scroll-reveal">
+            <div class="card-meta">
+              <h3>End-to-End</h3>
+              <p>Filing and approvals handled instantly.</p>
+            </div>
+            
+            <div class="card-visual">
+              <div class="docs-stack" id="docs-stack-el">
+                <!-- Page 1: Commercial Invoice -->
+                <div class="doc-page doc-1">
+                  <div class="doc-header">
+                    <span class="doc-title">INVOICE</span>
+                    <span class="doc-id">#9284</span>
+                  </div>
+                  <div class="doc-divider"></div>
+                  <div class="doc-rows-mini">
+                    <div class="doc-row-item"><span>Qty 200</span><span>$42k</span></div>
+                    <div class="doc-row-item"><span>Qty 500</span><span>$98k</span></div>
+                  </div>
+                  <div class="doc-total">Total $140k</div>
+                  <div class="stamp-ok">✓</div>
+                </div>
+                
+                <!-- Page 2: Customs Bill of Entry -->
+                <div class="doc-page doc-2">
+                  <div class="doc-header">
+                    <span class="doc-title">ENTRY BILL</span>
+                  </div>
+                  <div class="doc-divider"></div>
+                  <div class="doc-rows-mini">
+                    <div class="doc-row-item"><span>IGST</span><span>18%</span></div>
+                    <div class="doc-row-item"><span>Duty</span><span>10%</span></div>
+                  </div>
+                  <div class="doc-seal-placeholder"></div>
+                  <div class="stamp-ok">✓</div>
+                </div>
+                
+                <!-- Page 3: Bill of Lading -->
+                <div class="doc-page doc-3">
+                  <div class="doc-header">
+                    <span class="doc-title">LADING BILL</span>
+                  </div>
+                  <div class="doc-divider"></div>
+                  <div class="doc-details-mini">
+                    <div>MSK-209482</div>
+                    <div>ROTTERDAM</div>
+                  </div>
+                  <div class="stamp-ok">✓</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: XI Intelligence -->
+          <div class="bento-card card-intelligence scroll-reveal">
+            <div class="card-meta">
+              <h3>XI Intelligence</h3>
+              <p>Real-time decision support engine.</p>
+            </div>
+            
+            <div class="card-visual">
+              <!-- Smart Decision Flow SVG -->
+              <svg viewBox="0 0 240 150" width="100%" height="150" style="overflow: visible;">
+                <!-- Connection pathways -->
+                <path id="path-customs" d="M 20 30 Q 90 30 120 75" fill="none" stroke="var(--navy)" stroke-opacity="0.12" stroke-width="2"/>
+                <path id="path-carrier" d="M 20 75 L 120 75" fill="none" stroke="var(--navy)" stroke-opacity="0.12" stroke-width="2"/>
+                <path id="path-invoice" d="M 20 120 Q 90 120 120 75" fill="none" stroke="var(--navy)" stroke-opacity="0.12" stroke-width="2"/>
+                
+                <path id="path-optimized" d="M 120 75 L 210 75" fill="none" stroke="var(--accent)" stroke-opacity="0.2" stroke-width="3"/>
+                
+                <!-- Left Nodes (Labels) -->
+                <circle cx="20" cy="30" r="4" fill="var(--navy)"/>
+                <circle cx="20" cy="75" r="4" fill="var(--navy)"/>
+                <circle cx="20" cy="120" r="4" fill="var(--navy)"/>
+                
+                <text x="28" y="33" font-size="8" font-weight="600" fill="var(--text-muted)">Customs</text>
+                <text x="28" y="78" font-size="8" font-weight="600" fill="var(--text-muted)">Carrier</text>
+                <text x="28" y="123" font-size="8" font-weight="600" fill="var(--text-muted)">Invoice</text>
+                
+                <!-- Central AI Core Node -->
+                <circle cx="120" cy="75" r="12" fill="var(--navy)"/>
+                <text x="120" y="78" font-size="8" font-weight="800" fill="#FAFAF8" text-anchor="middle">XI</text>
+                
+                <!-- Core pulsing rings -->
+                <circle cx="120" cy="75" r="18" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.4">
+                  <animate attributeName="r" values="12;28;12" dur="3s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+                </circle>
+
+                <!-- Output Node -->
+                <circle cx="210" cy="75" r="8" fill="var(--accent)"/>
+                <text x="210" y="78" font-size="9" font-weight="800" fill="#FAFAF8" text-anchor="middle">✓</text>
+                <text x="180" y="93" font-size="7" font-weight="700" fill="var(--accent)">Optimized</text>
+
+                <!-- Signal Pulses flowing to core -->
+                <circle r="3" fill="var(--accent)">
+                  <animateMotion dur="2.5s" repeatCount="indefinite" path="M 20 30 Q 90 30 120 75"/>
+                </circle>
+                <circle r="3" fill="var(--accent)">
+                  <animateMotion dur="2s" repeatCount="indefinite" path="M 20 75 L 120 75"/>
+                </circle>
+                <circle r="3" fill="var(--accent)">
+                  <animateMotion dur="3s" repeatCount="indefinite" path="M 20 120 Q 90 120 120 75"/>
+                </circle>
+                
+                <!-- Consumed Output Pulse -->
+                <circle r="4" fill="var(--accent)">
+                  <animateMotion dur="1.8s" repeatCount="indefinite" path="M 120 75 L 210 75"/>
+                </circle>
+              </svg>
+            </div>
+          </div>
+          
+          <!-- Card 4: Deep Integrations -->
+          <div class="bento-card card-integrations scroll-reveal">
+            <div class="integrations-inner">
+              <h3>Deep Sync</h3>
+              <p>Sync with ERPs and Customs.</p>
+            </div>
+            
+            <div class="marquee-container" style="flex-grow: 1;">
+              <div class="marquee-content">
+                <span class="int-badge">SAP</span>
+                <span class="int-badge">Maersk</span>
+                <span class="int-badge">ICEGATE</span>
+                <span class="int-badge">Oracle</span>
+                <span class="int-badge">MSC</span>
+                <span class="int-badge">DGFT</span>
+                <span class="int-badge">DHL</span>
+                <span class="int-badge">CMA CGM</span>
+                
+                <!-- Loop -->
+                <span class="int-badge">SAP</span>
+                <span class="int-badge">Maersk</span>
+                <span class="int-badge">ICEGATE</span>
+                <span class="int-badge">Oracle</span>
+                <span class="int-badge">MSC</span>
+                <span class="int-badge">DGFT</span>
+                <span class="int-badge">DHL</span>
+                <span class="int-badge">CMA CGM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Cost Automation -->
+          <div class="bento-card card-cost scroll-reveal" id="cost-card-ticker">
+            <div class="card-meta">
+              <h3>Cost Control</h3>
+              <p>Unnecessary spend drops instantly.</p>
+            </div>
+            
+            <div class="card-visual" style="flex-direction: column; align-items: stretch; gap: 16px; width: 100%;">
+              <!-- Ticking drops digits -->
+              <div class="cost-ticker-wrapper" style="text-align: left; display: flex; align-items: baseline; gap: 8px;">
+                <div class="cost-ticker" style="font-size: 36px; font-weight: 800; color: var(--navy);">
+                  <span class="cost-symbol" style="color: var(--accent);">₹</span><span id="reconciliation-errors-count">482900</span>
+                </div>
+                <div style="font-size: 13px; font-weight: 700; color: #27AE60; background: rgba(39, 174, 96, 0.1); padding: 2px 8px; border-radius: 9999px;">
+                  ↓ 92%
+                </div>
+              </div>
+              
+              <!-- Cost Bars Visualizer -->
+              <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                <!-- Legacy -->
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div style="display: flex; justify-content: space-between; font-size: 9px; font-weight: 600; color: var(--text-faint); text-transform: uppercase;">
+                    <span>Legacy Manual Costs</span>
+                    <span>₹4.8L</span>
+                  </div>
+                  <div style="width: 100%; height: 6px; background: rgba(27, 46, 75, 0.1); border-radius: 9999px;"></div>
+                </div>
+                
+                <!-- XEMI -->
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div style="display: flex; justify-content: space-between; font-size: 9px; font-weight: 600; color: var(--accent); text-transform: uppercase;">
+                    <span>XEMI Optimized Cost</span>
+                    <span>₹38K</span>
+                  </div>
+                  <div style="width: 100%; height: 6px; background: rgba(59, 111, 212, 0.1); border-radius: 9999px; overflow: hidden;">
+                    <div id="cost-bar-fill" style="width: 100%; height: 100%; background: var(--accent); border-radius: 9999px; transition: width 1500ms cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: OUTCOMES (DRAG-SCROLL CAROUSEL)
+         ========================================================================== -->
+    <section class="outcomes-section" id="outcomes">
+      <div class="outcomes-container">
+        <span class="section-label">Outcomes</span>
+        
+        <div class="carousel-container" id="outcomes-carousel">
+          
+          <!-- Card 1 -->
+          <div class="carousel-card scroll-reveal">
+            <span class="role-badge">Importer</span>
+            <div class="card-illustration-box">
+              <svg width="150" height="65" viewBox="0 0 150 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Corner Castings (Top/Bottom, Left/Right) -->
+                <rect x="16" y="12" width="6" height="6" rx="1" fill="rgba(255,255,255,0.3)" />
+                <rect x="16" y="47" width="6" height="6" rx="1" fill="rgba(255,255,255,0.3)" />
+                <rect x="128" y="12" width="6" height="6" rx="1" fill="rgba(255,255,255,0.3)" />
+                <rect x="128" y="47" width="6" height="6" rx="1" fill="rgba(255,255,255,0.3)" />
+                
+                <!-- Heavy Corner Posts -->
+                <rect x="22" y="12" width="6" height="41" fill="rgba(255,255,255,0.25)" />
+                <rect x="122" y="12" width="6" height="41" fill="rgba(255,255,255,0.25)" />
+                
+                <!-- Container Main Outer Body -->
+                <rect x="28" y="15" width="94" height="35" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+                
+                <!-- Corrugation Ridges (Vertical Panels) -->
+                <rect x="34" y="16" width="6" height="33" fill="rgba(255,255,255,0.08)" />
+                <rect x="46" y="16" width="6" height="33" fill="rgba(255,255,255,0.08)" />
+                <rect x="58" y="16" width="6" height="33" fill="rgba(255,255,255,0.08)" />
+                <rect x="70" y="16" width="6" height="33" fill="rgba(255,255,255,0.08)" />
+                <rect x="82" y="16" width="6" height="33" fill="rgba(255,255,255,0.08)" />
+                <rect x="94" y="16" width="6" height="33" fill="rgba(255,255,255,0.08)" />
+                <rect x="106" y="16" width="6" height="33" fill="rgba(255,255,255,0.08)" />
+                
+                <!-- Inner Divider Lines of Corrugation -->
+                <line x1="40" y1="15" x2="40" y2="50" stroke="rgba(0,0,0,0.25)" stroke-width="1" />
+                <line x1="52" y1="15" x2="52" y2="50" stroke="rgba(0,0,0,0.25)" stroke-width="1" />
+                <line x1="64" y1="15" x2="64" y2="50" stroke="rgba(0,0,0,0.25)" stroke-width="1" />
+                <line x1="76" y1="15" x2="76" y2="50" stroke="rgba(0,0,0,0.25)" stroke-width="1" />
+                <line x1="88" y1="15" x2="88" y2="50" stroke="rgba(0,0,0,0.25)" stroke-width="1" />
+                <line x1="100" y1="15" x2="100" y2="50" stroke="rgba(0,0,0,0.25)" stroke-width="1" />
+                <line x1="112" y1="15" x2="112" y2="50" stroke="rgba(0,0,0,0.25)" stroke-width="1" />
+                
+                <!-- Top and Bottom Heavy Rail Details -->
+                <line x1="28" y1="15" x2="122" y2="15" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+                <line x1="28" y1="50" x2="122" y2="50" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+                
+                <!-- Stencil markings -->
+                <text x="75" y="36" font-family="monospace" font-size="6" font-weight="bold" fill="rgba(255,255,255,0.45)" text-anchor="middle" letter-spacing="1">XEMI 90284-7</text>
+                
+                <!-- Green laser scan sweep line moving over the container -->
+                <line class="container-scanner-beam" x1="29" y1="13" x2="29" y2="52" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0px 0px 4px #10B981);" />
+              </svg>
+            </div>
+            <div>
+              <div class="outcome-number">₹0</div>
+              <div class="outcome-label">Avoidable demurrage in 6 months</div>
+            </div>
+            <div class="outcome-problem">Document errors found only after containers reached port</div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="carousel-card scroll-reveal">
+            <span class="role-badge">CHA</span>
+            <div class="card-illustration-box">
+              <svg width="200" height="70" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Speedometer dial background -->
+                <path d="M 40 60 A 60 60 0 0 1 160 60" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8" stroke-linecap="round" fill="none" />
+                <!-- Red warning zone (slow/manual legacy) -->
+                <path d="M 40 60 A 60 60 0 0 1 90 15" stroke="#EF4444" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.4" />
+                <!-- Green fast zone (XEMI active) -->
+                <path d="M 90 15 A 60 60 0 0 1 160 60" stroke="#10B981" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9" style="filter: drop-shadow(0px 0px 4px rgba(16, 185, 129, 0.4));" />
+                <!-- Center pivot point -->
+                <circle cx="100" cy="60" r="4" fill="rgba(255, 255, 255, 0.8)" />
+                <!-- Speed Needle initially pointing to the red warning zone (58, 18) which is rotated clockwise by 84 degrees on hover -->
+                <line class="speed-needle" x1="100" y1="60" x2="58" y2="18" stroke="#F5FAF8" stroke-width="3" stroke-linecap="round" style="transform-origin: 100px 60px;" />
+              </svg>
+            </div>
+            <div>
+              <div class="outcome-number">11 min</div>
+              <div class="outcome-label">Per job (was 75 minutes)</div>
+            </div>
+            <div class="outcome-problem">Firm couldn't take new clients without hiring</div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="carousel-card scroll-reveal">
+            <span class="role-badge">Exporter</span>
+            <div class="card-illustration-box">
+              <svg width="200" height="70" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid line background -->
+                <line x1="20" y1="60" x2="180" y2="60" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+                <!-- Bar 1 (Muted) -->
+                <rect x="40" y="40" width="16" height="20" rx="3" fill="rgba(255, 255, 255, 0.15)" />
+                <!-- Bar 2 (Muted) -->
+                <rect x="75" y="25" width="16" height="35" rx="3" fill="rgba(255, 255, 255, 0.15)" />
+                <!-- Bar 3 (XEMI active, scaled on hover) -->
+                <g class="drawback-bar-3" style="transform-origin: 118px 60px;">
+                  <rect x="110" y="10" width="16" height="50" rx="3" fill="#3B6FD4" style="filter: drop-shadow(0px 0px 4px rgba(59, 111, 212, 0.6));" />
+                  <rect x="110" y="10" width="16" height="15" rx="3" fill="#10B981" /> <!-- Green top highlight -->
+                </g>
+                <!-- Gold coins pulsing above Bar 3 -->
+                <circle class="coin-pulse" cx="118" cy="4" r="4" fill="#F59E0B" stroke="#D97706" stroke-width="1" style="filter: drop-shadow(0px 0px 3px rgba(245, 158, 11, 0.6));" />
+              </svg>
+            </div>
+            <div>
+              <div class="outcome-number">₹38L</div>
+              <div class="outcome-label">Duty drawback recovered</div>
+            </div>
+            <div class="outcome-problem">Drawback filed late or not at all</div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="carousel-card scroll-reveal">
+            <span class="role-badge">Forwarder</span>
+            <div class="card-illustration-box">
+              <svg width="200" height="70" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Connection lines (channels) -->
+                <line x1="40" y1="15" x2="100" y2="35" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" />
+                <line x1="100" y1="60" x2="100" y2="35" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" />
+                <line x1="160" y1="15" x2="100" y2="35" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" />
+                
+                <!-- Outer nodes (Sources) -->
+                <circle cx="40" cy="15" r="6" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" />
+                <circle cx="100" cy="60" r="6" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" />
+                <circle cx="160" cy="15" r="6" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" />
+                
+                <!-- Outer nodes tiny labels (Maersk, MSC, DHL) in monospace style -->
+                <text x="40" y="19" font-family="monospace" font-size="5" fill="rgba(255, 255, 255, 0.4)" text-anchor="middle">M</text>
+                <text x="100" y="64" font-family="monospace" font-size="5" fill="rgba(255, 255, 255, 0.4)" text-anchor="middle">S</text>
+                <text x="160" y="19" font-family="monospace" font-size="5" fill="rgba(255, 255, 255, 0.4)" text-anchor="middle">D</text>
+
+                <!-- Central Node (XEMI Core) -->
+                <circle cx="100" cy="35" r="9" fill="rgba(59, 111, 212, 0.15)" stroke="rgba(59, 111, 212, 0.4)" stroke-width="1" />
+                <circle cx="100" cy="35" r="5" fill="#3B6FD4" />
+                <circle cx="100" cy="35" r="2" fill="#FFF" />
+                
+                <!-- Packets (Relative translated via CSS animations) -->
+                <circle class="forwarder-packet packet-1" cx="40" cy="15" r="2.5" fill="#10B981" style="filter: drop-shadow(0px 0px 4px #10B981);" />
+                <circle class="forwarder-packet packet-2" cx="100" cy="60" r="2.5" fill="#10B981" style="filter: drop-shadow(0px 0px 4px #10B981);" />
+                <circle class="forwarder-packet packet-3" cx="160" cy="15" r="2.5" fill="#10B981" style="filter: drop-shadow(0px 0px 4px #10B981);" />
+              </svg>
+            </div>
+            <div>
+              <div class="outcome-number">10 min</div>
+              <div class="outcome-label">Morning data prep (was 90 min)</div>
+            </div>
+            <div class="outcome-problem">90 min every morning across 8 carrier portals</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: WHO IT'S FOR (ICP ROWS)
+         ========================================================================== -->
+    <section class="icps-section" id="solutions">
+      
+      <!-- Row 1: Importers -->
+      <div class="icp-row" id="icp-row-1">
+        <div class="icp-text-col">
+          <span class="icp-tag">Importers</span>
+          <h2 class="icp-headline">Full control from PO to warehouse.</h2>
+          <a href="#demo" class="icp-explore">
+            Explore 
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+        <div class="icp-visual-col">
+          <div class="icp-mockup-card">
+            <div class="importer-tracker">
+              <div style="font-size: 11px; font-weight: 600; color: var(--navy);">Shipment Milestone Tracker</div>
+              <div class="tracker-bar-bg">
+                <div class="tracker-bar-fill" id="imp-tracker-fill"></div>
+              </div>
+              <div class="tracker-steps">
+                <span>PO Issued</span>
+                <span>Customs Cleared</span>
+                <span>Delivered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Exporters -->
+      <div class="icp-row" id="icp-row-2">
+        <div class="icp-visual-col">
+          <div class="icp-mockup-card">
+            <div class="exporter-form" id="exporter-form-widget">
+              <div style="font-size: 11px; font-weight: 600; color: var(--navy); margin-bottom: 6px;">Shipping Bill Filing</div>
+              <div class="form-row">
+                <label>Vessel Name</label>
+                <input type="text" class="typewrite-field" data-text="MAERSK MC-KINNEY" readonly>
+              </div>
+              <div class="form-row">
+                <label>Shipping Bill No.</label>
+                <input type="text" class="typewrite-field" data-text="SB-2849102" readonly>
+              </div>
+              <div class="form-row">
+                <label>Drawback Value</label>
+                <input type="text" class="typewrite-field" data-text="₹3,84,000" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="icp-text-col">
+          <span class="icp-tag">Exporters</span>
+          <h2 class="icp-headline">Ship faster. Stay compliant.</h2>
+          <a href="#demo" class="icp-explore">
+            Explore 
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Row 3: Customs -->
+      <div class="icp-row" id="icp-row-3">
+        <div class="icp-text-col">
+          <span class="icp-tag">Customs</span>
+          <h2 class="icp-headline">More shipments. Same team.</h2>
+          <a href="#demo" class="icp-explore">
+            Explore 
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+        <div class="icp-visual-col">
+          <div class="icp-mockup-card">
+            <div class="customs-queue" id="customs-queue-widget">
+              <div style="font-size: 11px; font-weight: 600; color: var(--navy); margin-bottom: 6px;">Job Queue</div>
+              <div class="queue-row" id="q-row-1">
+                <span>Job SBL-8924</span>
+                <div class="queue-check">✓</div>
+              </div>
+              <div class="queue-row" id="q-row-2">
+                <span>Job SBL-8925</span>
+                <div class="queue-check">✓</div>
+              </div>
+              <div class="queue-row" id="q-row-3">
+                <span>Job SBL-8926</span>
+                <div class="queue-check">✓</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4: Forwarders -->
+      <div class="icp-row" id="icp-row-4">
+        <div class="icp-visual-col">
+          <div class="icp-mockup-card">
+            <div class="forwarder-dashboard">
+              <div style="font-size: 11px; font-weight: 600; color: var(--navy); margin-bottom: 6px;">Live Carrier Dashboard</div>
+              <div class="dashboard-row">
+                <span class="live-indicator"></span>
+                <span>Maersk Space Allocated</span>
+              </div>
+              <div class="dashboard-row">
+                <span class="live-indicator"></span>
+                <span>MSC Booking Confirmed</span>
+              </div>
+              <div class="dashboard-row">
+                <span class="live-indicator"></span>
+                <span>CMA CGM Gate-In Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="icp-text-col">
+          <span class="icp-tag">Forwarders</span>
+          <h2 class="icp-headline">One view. Every shipment.</h2>
+          <a href="#demo" class="icp-explore">
+            Explore 
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: SUPPORT (EDITORIAL STICKY-SCROLL)
+         ========================================================================== -->
+    <section class="support-section">
+      <div class="support-container">
+        
+        <div class="support-left">
+          <div class="always-on-orbit-widget">
+            <svg width="200" height="200" viewBox="0 0 200 200" class="always-on-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Orbit paths -->
+              <circle cx="100" cy="100" r="65" stroke="rgba(27, 46, 75, 0.08)" stroke-width="1.5" stroke-dasharray="4 4" fill="none" />
+              <!-- Outer decorative ring -->
+              <circle cx="100" cy="100" r="88" stroke="rgba(27, 46, 75, 0.04)" stroke-width="1" fill="none" />
+              <!-- Glowing aura backdrops -->
+              <circle cx="100" cy="100" r="38" fill="rgba(16, 185, 129, 0.03)" />
+              
+              <!-- Central Dial -->
+              <circle cx="100" cy="100" r="34" fill="#1B2E4B" style="filter: drop-shadow(0px 6px 12px rgba(27, 46, 75, 0.15));" />
+              <text x="100" y="96" font-family="var(--font-sans)" font-size="8" fill="rgba(250, 250, 248, 0.5)" font-weight="600" text-anchor="middle" letter-spacing="0.05em">XEMI</text>
+              <text x="100" y="111" font-family="var(--font-display)" font-size="10" fill="#FAFAF8" font-weight="800" text-anchor="middle">ACTIVE</text>
+              
+              <!-- Bright glowing "ON" indicator light -->
+              <circle class="always-on-led-glow" cx="100" cy="76" r="4.5" fill="#10B981" />
+              <circle class="always-on-led" cx="100" cy="76" r="2.5" fill="#34D399" />
+              
+              <!-- Orbiting Satellites container (will be rotated via CSS) -->
+              <g class="always-on-satellites-group" style="transform-origin: 100px 100px;">
+                <!-- Satellite 1 (RM) at angle 0 (right: 165, 100) -->
+                <g class="satellite-node sat-1 active-sat" style="transform-origin: 165px 100px;">
+                  <circle cx="165" cy="100" r="14" fill="#FAFAF8" stroke="#3B6FD4" stroke-width="1.5" style="filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.06));" />
+                  <text x="165" y="103.5" font-family="var(--font-display)" font-size="9" font-weight="800" fill="#1B2E4B" text-anchor="middle">01</text>
+                </g>
+                
+                <!-- Satellite 2 (24x7) at angle 120 (67.5, 156.3) -->
+                <g class="satellite-node sat-2" style="transform-origin: 67.5px 156.3px;">
+                  <circle cx="67.5" cy="156.3" r="14" fill="#FAFAF8" stroke="#3B6FD4" stroke-width="1.5" style="filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.06));" />
+                  <text x="67.5" y="159.8" font-family="var(--font-display)" font-size="9" font-weight="800" fill="#1B2E4B" text-anchor="middle">02</text>
+                </g>
+                
+                <!-- Satellite 3 (Urgency) at angle 240 (67.5, 43.7) -->
+                <g class="satellite-node sat-3" style="transform-origin: 67.5px 43.7px;">
+                  <circle cx="67.5" cy="43.7" r="14" fill="#FAFAF8" stroke="#3B6FD4" stroke-width="1.5" style="filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.06));" />
+                  <text x="67.5" y="47.2" font-family="var(--font-display)" font-size="9" font-weight="800" fill="#1B2E4B" text-anchor="middle">03</text>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h2>Always On.</h2>
+          <p>24×7. Every timezone.</p>
+        </div>
+        
+        <div class="support-right">
+          <div class="support-accordion">
+            
+            <!-- Item 1 -->
+            <div class="accordion-item active" data-index="0">
+              <div class="accordion-header">
+                <span class="accordion-counter">01</span>
+                <h3>Your Dedicated RM</h3>
+                <div class="accordion-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <p>One contact. WhatsApp, email, phone. Direct access without ticket queues.</p>
+                <div class="accordion-progress-bar"><div class="progress-fill"></div></div>
+              </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="accordion-item" data-index="1">
+              <div class="accordion-header">
+                <span class="accordion-counter">02</span>
+                <h3>24×7 Every Channel</h3>
+                <div class="accordion-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <p>Customs issues don't wait for office hours. Neither do we.</p>
+                <div class="accordion-progress-bar"><div class="progress-fill"></div></div>
+              </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="accordion-item" data-index="2">
+              <div class="accordion-header">
+                <span class="accordion-counter">03</span>
+                <h3>Built for Urgency</h3>
+                <div class="accordion-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <p>Vessel cutoffs. Midnight filings. Active support for critical supply lines.</p>
+                <div class="accordion-progress-bar"><div class="progress-fill"></div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: SECURITY
+         ========================================================================== -->
+    <section class="security-section">
+      <div class="security-container">
+        <span class="section-label" style="text-align: center; display: block;">Security</span>
+        
+        <div class="security-grid">
+          
+          <!-- Card 1: Padlock & Encryption -->
+          <div class="security-card scroll-reveal">
+            <div>
+              <h3>256-bit AES</h3>
+              <p>All data, in transit and at rest.</p>
+            </div>
+            
+            <div class="lock-visual-box">
+              <div class="scan-line" id="lock-scanner"></div>
+              <!-- Padlock SVG -->
+              <svg class="padlock-svg locked" id="padlock-widget" viewBox="0 0 170 170">
+                <!-- Shackle -->
+                <path class="lock-shackle" d="M 50 65 A 35 35 0 0 1 120 65 L 120 85 L 50 85 Z" fill="none" stroke="var(--navy)" stroke-width="7" stroke-linecap="round"/>
+                <!-- Body -->
+                <rect x="35" y="80" width="100" height="75" rx="12" fill="var(--navy)"/>
+                <!-- Keyhole -->
+                <circle cx="85" cy="112" r="7" fill="#FAFAF8"/>
+                <path d="M 85 119 L 85 135 L 80 135 L 90 135" stroke="#FAFAF8" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+              
+              <div class="encryption-text-ticker" id="lock-ticker">SECURE ENCRYPTION ACTIVE</div>
+            </div>
+          </div>
+          
+          <!-- Card 2: Role-Based Access Control -->
+          <div class="security-card scroll-reveal">
+            <div>
+              <h3>Role Access</h3>
+              <p>Complete audit trail on actions.</p>
+            </div>
+            
+            <div class="rbac-visual-box">
+              <!-- Role selectors -->
+              <div class="role-selectors">
+                <button class="role-pill active" data-role="admin">Admin</button>
+                <button class="role-pill" data-role="carrier">Carrier</button>
+                <button class="role-pill" data-role="auditor">Auditor</button>
+              </div>
+              
+              <!-- Permission list -->
+              <div class="user-permissions-list" id="permission-list-widget">
+                <div class="perm-row">
+                  <span>Filing & Customs</span>
+                  <span class="perm-badge allow" id="p-filing">Allow</span>
+                </div>
+                <div class="perm-row">
+                  <span>Routing Control</span>
+                  <span class="perm-badge allow" id="p-routing">Allow</span>
+                </div>
+                <div class="perm-row">
+                  <span>System Audit</span>
+                  <span class="perm-badge allow" id="p-audit">Allow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 3: Certifications SOC 2 & ISO -->
+          <div class="security-card scroll-reveal">
+            <div>
+              <h3>SOC 2 · ISO</h3>
+              <p>Certified, compliant, and aligned.</p>
+            </div>
+            
+            <div class="cert-visual-box">
+              <!-- Interactive Certificate Card -->
+              <div class="certificate-card" id="cert-widget">
+                <div class="scan-line" id="cert-scanner"></div>
+                <div class="cert-header">
+                  <span class="cert-title">XEMI.IO Security Seal</span>
+                  <!-- Golden Certificate Seal SVG -->
+                  <svg class="cert-gold-seal" viewBox="0 0 100 100">
+                    <polygon points="50,10 62,35 90,35 68,52 76,80 50,62 24,80 32,52 10,35 38,35" fill="#3B6FD4"/>
+                    <circle cx="50" cy="46" r="16" fill="none" stroke="#FAFAF8" stroke-width="2"/>
+                    <path d="M 40 70 L 50 90 L 60 70 Z" fill="#3B6FD4"/>
+                  </svg>
+                </div>
+                <div class="cert-body">
+                  <span>ID: XEMI-SOC2-2026</span>
+                  <span>COMPLIANCE: Type II Audited</span>
+                  <span>INFRA: ISO 27001 Certified</span>
+                </div>
+              </div>
+              
+              <div class="cert-status-log" id="cert-log-screen">Seal: Fully Verified</div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Rotating conic badges underneath the grid -->
+        <div class="cert-badges-horizontal" style="margin-top: 40px;">
+          <div class="security-badge">ISO 27001 Certified</div>
+          <div class="security-badge">SOC 2 Type II</div>
+          <div class="security-badge">GDPR Aligned</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: TESTIMONIALS
+         ========================================================================== -->
+    <section class="testimonials-section">
+      <span class="section-label">From Our Customers</span>
+      
+      <div class="testimonials-container">
+        
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="stars-strip">
+            <!-- 5 Stars SVG -->
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+          </div>
+          <p class="t-quote">"Transformed our complex import process into a simple, easy-to-track system."</p>
+          <span class="t-author">— Parmatma Rai, AlphaVector India</span>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="stars-strip">
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+          </div>
+          <p class="t-quote">"Significantly reduced time and effort. Concise relevant information. Saves manpower."</p>
+          <span class="t-author">— Rajeev Jagga, Ample Graphics</span>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="stars-strip">
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+          </div>
+          <p class="t-quote">"The true game-changer is XEMI's AI. Our team transitioned with minimal training."</p>
+          <span class="t-author">— Dharmil Sheth, Sync Logistics</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: 3 INTERACTIVE COMPONENTS (INTEGRATIONS HUB)
+         ========================================================================== -->
+    <section class="integrations-hub-section" id="integrations">
+      <h2>330+ Integrations</h2>
+      <div class="sublabel">Connected from day one.</div>
+      
+      <!-- Mobile tab controls -->
+      <div class="tab-controls">
+        <button class="tab-btn active" data-tab="panel-terminal">Portals</button>
+        <button class="tab-btn" data-tab="panel-orbit">Carriers</button>
+        <button class="tab-btn" data-tab="panel-nodes">ERPs</button>
+      </div>
+
+      <div class="panels-grid">
+        
+        <!-- PANEL A: Government Portals Terminal -->
+        <div class="hub-panel active-panel" id="panel-terminal">
+          <h3>Government Portals</h3>
+          <p>Click any gateway to connect.</p>
+          
+          <div class="terminal-container">
+            <div class="pills-group">
+              <button class="portal-pill" data-name="ICEGATE"><span class="status-dot"></span> ICEGATE</button>
+              <button class="portal-pill" data-name="DGFT"><span class="status-dot"></span> DGFT</button>
+              <button class="portal-pill" data-name="GST"><span class="status-dot"></span> GST</button>
+              <button class="portal-pill" data-name="ULIP"><span class="status-dot"></span> ULIP</button>
+              <button class="portal-pill" data-name="E-Way Bill"><span class="status-dot"></span> E-Way Bill</button>
+            </div>
+            
+            <div class="cli-box">
+              <div class="cli-header">
+                <div class="mac-dots">
+                  <span class="mac-dot" style="background:#FF5F56;"></span>
+                  <span class="mac-dot" style="background:#FFBD2E;"></span>
+                  <span class="mac-dot" style="background:#27C93F;"></span>
+                </div>
+                <span>XEMI Gateway</span>
+              </div>
+              <div id="terminal-screen">
+                <div class="cli-line">> Ready. Select gateway.</div>
+              </div>
+              <div class="cli-line"><span class="cli-cursor"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL B: 3D Orbit Ring projection -->
+        <div class="hub-panel" id="panel-orbit">
+          <h3>Global Carriers</h3>
+          <p>Hover badge to reveal sync status.</p>
+          
+          <div class="orbit-visual-box">
+            <div class="orbit-badges-container" id="orbit-badges-wrap">
+              <div class="orbit-center-node">
+                <div class="orbit-center-val">330+</div>
+                <div class="orbit-center-lbl">Carriers</div>
+              </div>
+              
+              <!-- 10 Orbits -->
+              <span class="orbit-badge" data-name="Maersk">Maersk</span>
+              <span class="orbit-badge" data-name="MSC">MSC</span>
+              <span class="orbit-badge" data-name="CMA CGM">CMA CGM</span>
+              <span class="orbit-badge" data-name="COSCO">COSCO</span>
+              <span class="orbit-badge" data-name="Hapag-Lloyd">Hapag-Lloyd</span>
+              <span class="orbit-badge" data-name="DHL">DHL</span>
+              <span class="orbit-badge" data-name="FedEx">FedEx</span>
+              <span class="orbit-badge" data-name="Air India">Air India</span>
+              <span class="orbit-badge" data-name="Qatar">Qatar</span>
+              <span class="orbit-badge" data-name="Etihad">Etihad</span>
+            </div>
+            <div class="orbit-tooltip" id="carrier-tooltip">Connected · Live</div>
+          </div>
+        </div>
+
+        <!-- PANEL C: SVG Node Graph -->
+        <div class="hub-panel" id="panel-nodes">
+          <h3>ERP & CRM</h3>
+          <p>Click node to trigger sync.</p>
+          
+          <div class="node-graph-box">
+            <!-- Node Connecting Lines SVG -->
+            <svg class="svg-node-lines" viewBox="0 0 300 300" id="node-graph-svg">
+              <line x1="150" y1="150" x2="150" y2="54" class="node-line" id="line-1"/>
+              <line x1="150" y1="150" x2="246" y2="114" class="node-line" id="line-2"/>
+              <line x1="150" y1="150" x2="210" y2="234" class="node-line" id="line-3"/>
+              <line x1="150" y1="150" x2="90" y2="234" class="node-line" id="line-4"/>
+              <line x1="150" y1="150" x2="54" y2="114" class="node-line" id="line-5"/>
+            </svg>
+            
+            <div class="nodes-container-html">
+              <div class="graph-node-center">XEMI</div>
+              
+              <!-- 5 Pentagon Nodes -->
+              <div class="graph-node" id="node-1" data-name="SAP">SAP</div>
+              <div class="graph-node" id="node-2" data-name="Oracle">Oracle</div>
+              <div class="graph-node" id="node-3" data-name="MS Dynamics">MS Dyn</div>
+              <div class="graph-node" id="node-4" data-name="REST API">API</div>
+              <div class="graph-node" id="node-5" data-name="Webhook">Webhook</div>
+            </div>
+            
+            <div class="node-tooltip" id="erp-node-tooltip">Bi-directional sync</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 10: FINAL CTA
+         ========================================================================== -->
+    <section class="cta-section" id="demo">
+      <canvas class="cta-canvas" id="cta-canvas"></canvas>
+      
+      <div class="cta-container">
+        <h2 class="cta-headline">
+          <span class="cta-line-1">Fully Connected.</span>
+          <span class="cta-line-2">Fully Intelligent.</span>
+        </h2>
+        
+        <div class="cta-buttons">
+          <a href="#demo" class="btn btn-white">Request a Demo</a>
+          <a href="#platform" class="btn btn-ghost-white">See the Platform</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="footer-container">
+      
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="xemi-logo.png" alt="XEMI" class="logo-image footer-logo">
+          <div class="footer-tagline">AI-native trade operations.</div>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#demo">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="#solutions">For Importers</a></li>
+            <li><a href="#solutions">For Exporters</a></li>
+            <li><a href="#solutions">For Customs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#demo">About Us</a></li>
+            <li><a href="#demo">Careers</a></li>
+            <li><a href="#outcomes">Case Studies</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>© 2026 XEMI ·  Designed by KG Digitech</div>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Separated JS Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
